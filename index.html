@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Salon $ Spa</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<style>
+body{
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
+
+.fashion{
+  background-image: url('img/fashion.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.beard{
+  background-image: url('img/beard.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+.hairSalon{
+  background-image: url('img/hair-salons.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+.serviceImg{
+  background-image: url('img/service.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+.fashionTextInfo{
+  opacity:0.5;
+}
+.serviceLength{
+  height:550px;
+}
+.makeUp{
+  background-image: url('img/makeUp.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+.btn-rounded{
+  border-radius:10em;
+}
+.hm-black-slight .mask{
+  background-color:rgba(0,0,0,.1);
+}
+.hm-black-strong .mask {
+  background-color: rgba(0,0,0,.7);
+}
+.girlHair{
+  background-image: url('img/woman-with-long-hair.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  height:100px;
+}
+.boyhairShape{
+  background-image: url('img/boy-hair-shape.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  height:100px;
+}
+.malehairOfHeadAndFaceShapes{
+  background-image: url('img/young-male-short-irregular-hair-on-head-and-a-small-beard.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  height:100px;
+}
+.womanHeadSilhouette{
+  background-image: url('img/female-hairs.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  height:100px;
+}
+.girlHair:hover,.btn-rounded:hover,.womanHeadSilhouette:hover,.malehairOfHeadAndFaceShapes:hover, .boyhairShape:hover  {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.pricingMen{
+  background-image: url('img/serviceImg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  height:400px;
+}
+.beautifulBodyCasual{
+  background-image: url('img/beautiful-body-casual.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  height:400px;
+}
+.welcomeBackground{
+  background-image: url('img/welcomeBackground.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  height:400px;
+  margin-top: -46px;
+}
+.handshake{
+  background-image: url('img/handshake.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  height:70px;
+  width:70px;
+}
+.borderRight{
+  border-right:1px solid white;
+}
+.borderBottom{
+  border-bottom:1px solid white;
+}
+</style>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+        <strong>MDB</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#textInfo">About MDB</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mdbootstrap.com/getting-started/" target="_blank">Free download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank">Free tutorials</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded"
+              target="_blank">
+              <i class="fa fa-github mr-2"></i>MDB GitHub
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view fashion">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex align-items-center">
+
+            <!-- Content -->
+            <div class="text-left white-text wow fadeIn">
+              <div class="row fashionTextInfo">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5  py-3 grey lighten-3 wow rollIn">
+                    <h1 class="mb-4 mx-4 blue-grey-text">
+                        <strong>Fashion</strong>
+                    </h1>
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 grey-text lighten-2">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </div>
+                  </div>  
+              </div>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+        <div class="view beard">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text wow fadeIn">
+                <div class="row fashionTextInfo justify-content-end">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5  py-3 black lighten-5 wow flipInY">
+                      <h1 class="mb-4 mx-4 blue-grey-text">
+                          <strong>Fashion</strong>
+                      </h1>
+  
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 grey-text lighten-2">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      </div>
+                    </div>  
+                </div>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view hairSalon">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text wow fadeIn">
+                <div class="row fashionTextInfo">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5  py-3 blue lighten-5 wow rollIn">
+                      <h1 class="mb-4 mx-4 blue-grey-text">
+                          <strong>Fashion</strong>
+                      </h1>
+  
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 grey-text lighten-2">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      </div>
+                    </div>  
+                </div>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+
+  </div>
+  <!--/.Carousel Wrapper-->
+
+  <!--Main layout-->
+  <main>
+    <div class="container-fluid px-0">
+
+      <section class=" wow fadeIn" id="pricing">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 px-0">
+          <div class="view pricingMen hm-black-strong zoom">
+            <div class="mask flex-center">
+              <div class="row borderBox">
+               <h3 class="orange-text wow bounceInLeft"><i class="fa fa-rupee-sign"></i>FOR MENS</h3>
+              </div> 
+            </div>
+          </div>    
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 px-0 wow fadeIn view welcomeBackground">
+            <h3 class="row justify-content-center p-3 mt-5">WELCOME TO OMBRE</h3>
+            <div class="row justify-content-center"><div class="handshake wow tada"></div></div>
+            <div class="row justify-content-center grey-text p-3">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                  Located at the heart of Bangalore , Ombré Salon is the premier Hair Salon, offering you a wide range of styling services and products to give you the look you want. From Pedicure to Body Wax services, we’ve got you covered. If there’s a wedding, party or event in your future — or if you’re simply ready to get pampered — give us a call today!
+              </div>                 
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 px-0">
+            <div class="view beautifulBodyCasual hm-black-strong">
+              <div class="mask flex-center">
+                  <div class="row borderBox">
+                   <h3 class="orange-text wow bounceInRight"><i class="fa fa-rupee-sign"></i> FOR WOMENS</h3>
+                  </div>
+              </div>
+             </div> 
+        </div>
+      </div>  
+      </section>
+
+      <!--Section: Main info-->
+      <section class=" wow fadeIn" id="ourServices">
+
+        <!--Grid row-->
+        <div class="row serviceLength">
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4 pr-0">
+            <div class="view serviceImg hm-black-slight">
+              <div class="mask">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-5 mt-3">
+                  <h1 class="wow tada">OUR SERVICES</h1>
+                </div>
+              </div>
+
+              <div class="row justify-content-end">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7 px-4 mt-4 wow bounceInLeft"><i class="fa fa-quote-left"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum augue quis purus lobortis, a fringilla velit lacinia. Praesent efficitur non diam in eleifend. Maecenas blandit condimentum velit ac pretium.</div>
+              </div>
+
+              <div class="row justify-content-end">
+                  <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 px-4 mt-3 text-center">
+                    <button type="button" class="btn btn-outline-success waves-effect btn-rounded">Read More</button>
+                  </div>  
+              </div>
+              </div>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4 pl-0">
+
+            <div class="view makeUp hm-black-strong">
+              <div class="mask">
+                  <div class="row px-4 py-3">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="row justify-content-center borderRight borderBottom">
+                            <div class="col-3 girlHair mt-2 wow zoomIn"></div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-4 white-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum augue quis purus lobortis, a fringilla velit lacinia.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                        <div class="row justify-content-center borderBottom">
+                            <div class="col-3 womanHeadSilhouette  mt-2 wow zoomIn"></div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-4 white-text text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum augue quis purus lobortis, a fringilla velit lacinia.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="row justify-content-center borderRight">
+                            <div class="col-3 boyhairShape  mt-2 wow zoomIn"></div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-4 white-text text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum augue quis purus lobortis, a fringilla velit lacinia.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="row justify-content-center">
+                            <div class="col-3 malehairOfHeadAndFaceShapes  mt-2 wow zoomIn"></div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-4 white-text text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum augue quis purus lobortis, a fringilla velit lacinia.
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+         
+            </div>
+
+            <hr>
+
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+     
+      </section>
+      <!--Section: Main info-->
+
+      <hr class="my-5">
+
+      <!--Section: Main features & Quick Start-->
+      <section>
+
+        <h3 class="h3 text-center mb-5">What Clients said</h3>
+
+        <div class="row mb-4 wow fadeInDown">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center text-center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.
+          </div>
+        </div>
+        <!--Grid row-->
+
+        <div class="row text-center">
+
+          <!--First column-->
+          <div class="col-md-4 mb-4 wow zoomIn">
+
+              <div class="testimonial">
+                  <!--Avatar-->
+                  <div class="avatar mx-auto">
+                      <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle img-fluid z-depth-1">
+                  </div>
+
+                  <!--Content-->
+                  <h5 class="dark-grey-text font-weight-bold">Anna Deynah</h5>
+                  <p>
+                      </p><div class="grey-text-2"><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          Quod eos id officiis hic tenetur quae quaerat ad velit ab.<p></p>
+                  </div>
+
+                  <!--Review-->
+                  <div class="pink-text">
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star-half-full"> </i>
+                  </div>
+              </div>
+          </div>
+          <!--/First column-->
+
+          <!--Second column-->
+          <div class="col-md-4 mb-4 wow zoomIn">
+              <div class="testimonial">
+                  <!--Avatar-->
+                  <div class="avatar mx-auto">
+                      <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle img-fluid z-depth-1">
+                  </div>
+
+                  <!--Content-->
+                  <h5 class="dark-grey-text font-weight-bold">Kate Doe</h5>
+                  <p>
+                      </p><div class="grey-text-2"><i class="fa fa-quote-left"></i> Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                          corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.<p></p>
+                  </div>
+
+                  <!--Review-->
+                  <div class="pink-text mb-5">
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star"> </i>
+                  </div>
+              </div>
+          </div>
+          <!--/Second column-->
+
+          <!--Third column-->
+          <div class="col-md-4 mb-4 wow zoomIn">
+              <div class="testimonial">
+                  <!--Avatar-->
+                  <div class="avatar mx-auto">
+                      <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(5).jpg" class="rounded-circle img-fluid z-depth-1">
+                  </div>
+                  <!--Content-->
+                  <h5 class="dark-grey-text font-weight-bold">Maria Kate</h5>
+                  <p>
+                      </p><div class="grey-text-2"><i class="fa fa-quote-left"></i> At vero eos et accusamus et iusto odio dignissimos ducimus
+                          qui blanditiis praesentium voluptatum deleniti atque corrupti.<p></p>
+                  </div>
+
+                  <!--Review-->
+                  <div class="pink-text">
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star-o"> </i>
+                  </div>
+
+              </div>
+          </div>
+          <!--/Third column-->
+
+      </div>
+
+        <div class="row wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 px-4">
+
+           
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12">
+
+           
+          </div>
+          <!--/Grid column-->
+
+          <div class="col-lg-4 col-md-12">
+
+           
+          </div>
+
+        </div>
+        <!--/Grid row-->
+
+      </section>
+      <!--Section: Main features & Quick Start-->
+
+      <hr class="my-5">
+
+      <!--Section: Not enough-->
+      <section>
+
+        <h2 class="my-5 h3 text-center">Not enough?</h2>
+
+        <!--First row-->
+        <div class="row features-small mb-5 mt-3 wow fadeIn">
+
+          <!--First column-->
+          <div class="col-md-4">
+            <!--First row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Free for personal and commercial use</h6>
+                <p class="grey-text">Our license is user-friendly. Feel free to use MDB for both private as well as commercial projects.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">400+ UI elements</h6>
+                <p class="grey-text">An impressive collection of flexible components allows you to develop any project.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">600+ icons</h6>
+                <p class="grey-text">Hundreds of useful, scalable, vector icons at your disposal.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Third row-->
+
+            <!--Fourth row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Fully responsive</h6>
+                <p class="grey-text">It doesn't matter whether your project will be displayed on desktop, laptop, tablet or mobile phone. MDB
+                  looks great on each screen.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Fourth row-->
+          </div>
+          <!--/First column-->
+
+          <!--Second column-->
+          <div class="col-md-4 flex-center">
+            <img src="https://mdbootstrap.com/img/Others/screens.png" alt="MDB Magazine Template displayed on iPhone" class="z-depth-0 img-fluid">
+          </div>
+          <!--/Second column-->
+
+          <!--Third column-->
+          <div class="col-md-4 mt-2">
+            <!--First row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">70+ CSS animations</h6>
+                <p class="grey-text">Neat and easy to use animations, which will increase the interactivity of your project and delight your visitors.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Plenty of useful templates</h6>
+                <p class="grey-text">Need inspiration? Use one of our predefined templates for free.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Easy installation</h6>
+                <p class="grey-text">5 minutes, a few clicks and... done. You will be surprised at how easy it is.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Third row-->
+
+            <!--Fourth row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-check-circle fa-2x indigo-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Easy to use and customize</h6>
+                <p class="grey-text">Using MDB is straightforward and pleasant. Components flexibility allows you deep customization. You will
+                  easily adjust each component to suit your needs.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Fourth row-->
+          </div>
+          <!--/Third column-->
+
+        </div>
+        <!--/First row-->
+
+      </section>
+      <!--Section: Not enough-->
+
+      <hr class="mb-5">
+
+      <!--Section: More-->
+      <section>
+
+        <h2 class="my-5 h3 text-center">...and even more</h2>
+
+        <!--First row-->
+        <div class="row features-small mt-5 wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-firefox fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2 pl-3">
+                <h5 class="feature-title font-bold mb-1">Cross-browser compatibility</h5>
+                <p class="grey-text mt-2">Chrome, Firefox, IE, Safari, Opera, Microsoft Edge - MDB loves all browsers; all browsers love MDB.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-level-up fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Frequent updates</h5>
+                <p class="grey-text mt-2">MDB becomes better every month. We love the project and enhance as much as possible.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-comments-o fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Active community</h5>
+                <p class="grey-text mt-2">Our society grows day by day. Visit our forum and check how it is to be a part of our family.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-code fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">jQuery 3.x</h5>
+                <p class="grey-text mt-2">MDB is integrated with newest jQuery. Therefore you can use all the latest features which come along with
+                  it.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/First row-->
+
+        <!--Second row-->
+        <div class="row features-small mt-4 wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-cubes fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Modularity</h5>
+                <p class="grey-text mt-2">Material Design for Bootstrap comes with both, compiled, ready to use libraries including all features as
+                  well as modules for CSS (SASS files) and JS.</p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-question fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Technical support</h5>
+                <p class="grey-text mt-2">We care about reliability. If you have any questions - do not hesitate to contact us.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-th fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Flexbox</h5>
+                <p class="grey-text mt-2">MDB fully supports Flex Box. You can forget about alignment issues.</p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fa fa-file-code-o fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">SASS files</h5>
+                <p class="grey-text mt-2">Arranged and well documented .scss files can't wait until you compile them.</p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/Second row-->
+
+      </section>
+      <!--Section: More-->
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+    <!--Call to action-->
+    <div class="pt-4">
+      <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Download MDB
+        <i class="fa fa-download ml-2"></i>
+      </a>
+      <a class="btn btn-outline-white" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank" role="button">Start free tutorial
+        <i class="fa fa-graduation-cap ml-2"></i>
+      </a>
+    </div>
+    <!--/.Call to action-->
+
+    <hr class="my-4">
+
+    <!-- Social icons -->
+    <div class="pb-4">
+      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+        <i class="fa fa-facebook mr-3"></i>
+      </a>
+
+      <a href="https://twitter.com/MDBootstrap" target="_blank">
+        <i class="fa fa-twitter mr-3"></i>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+        <i class="fa fa-youtube mr-3"></i>
+      </a>
+
+      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
+        <i class="fa fa-google-plus mr-3"></i>
+      </a>
+
+      <a href="https://dribbble.com/mdbootstrap" target="_blank">
+        <i class="fa fa-dribbble mr-3"></i>
+      </a>
+
+      <a href="https://pinterest.com/mdbootstrap" target="_blank">
+        <i class="fa fa-pinterest mr-3"></i>
+      </a>
+
+      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+        <i class="fa fa-github mr-3"></i>
+      </a>
+
+      <a href="http://codepen.io/mdbootstrap/" target="_blank">
+        <i class="fa fa-codepen mr-3"></i>
+      </a>
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> MDBootstrap.com </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+      <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>
