@@ -145,3 +145,39 @@ body,
   .borderBottom{
     border-bottom:1px solid white;
   }
+  .packageBgImage{
+    background-image: url('../img/packageBackrround.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height:1200px;
+  }
+  .packageCard{
+    background-color:transparent;
+    box-shadow:none;
+  }
+  .shortHairScissors{
+    background-image: url('../img/short-hair-and-scissors.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height:100px;
+    width:100px;
+  }
+  .poutline{
+    border:2px solid #283593;
+    border-radius:50%;
+  }
+  .pwoutline{
+    border:2px solid #c2185b;
+    border-radius:50%;
+  }
+  .pbgcolor{
+    background-color: #283593;
+    opacity: 0.8;
+  }
+  .pwomenbgcolor {
+    background-color: #c2185b;
+    opacity: 0.8;
+  }
+  
