@@ -28,3 +28,120 @@ body,
 /* Footer color for sake of consistency with Navbar */
 .page-footer {
   background-color: #1C2331; }
+
+  body{
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .fashion{
+    background-image: url('../img/fashion.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .beard{
+    background-image: url('../img/beard.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+  }
+  .hairSalon{
+    background-image: url('../img/hair-salons.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+  }
+  .serviceImg{
+    background-image: url('../img/service.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+  }
+  .fashionTextInfo{
+    opacity:0.5;
+  }
+  .serviceLength{
+    height:550px;
+  }
+  .makeUp{
+    background-image: url('../img/makeUp.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+  }
+  .btn-rounded{
+    border-radius:10em;
+  }
+  .hm-black-slight .mask{
+    background-color:rgba(0,0,0,.1);
+  }
+  .hm-black-strong .mask {
+    background-color: rgba(0,0,0,.7);
+  }
+  .girlHair{
+    background-image: url('../img/woman-with-long-hair.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height:100px;
+  }
+  .boyhairShape{
+    background-image: url('../img/boy-hair-shape.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height:100px;
+  }
+  .malehairOfHeadAndFaceShapes{
+    background-image: url('../img/young-male-short-irregular-hair-on-head-and-a-small-beard.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height:100px;
+  }
+  .womanHeadSilhouette{
+    background-image: url('../img/female-hairs.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height:100px;
+  }
+  .girlHair:hover,.btn-rounded:hover,.womanHeadSilhouette:hover,.malehairOfHeadAndFaceShapes:hover, .boyhairShape:hover  {
+      transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .pricingMen{
+    background-image: url('../img/serviceImg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height:400px;
+  }
+  .beautifulBodyCasual{
+    background-image: url('../img/beautiful-body-casual.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height:400px;
+  }
+  .welcomeBackground{
+    background-image: url('../img/welcomeBackground.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height:400px;
+    margin-top: -46px;
+  }
+  .handshake{
+    background-image: url('../img/handshake.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height:70px;
+    width:70px;
+  }
+  .borderRight{
+    border-right:1px solid white;
+  }
+  .borderBottom{
+    border-bottom:1px solid white;
+  }
