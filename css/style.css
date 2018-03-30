@@ -61,7 +61,7 @@ body,
     opacity:0.5;
   }
   .serviceLength{
-    height:550px;
+    /* height:550px; */
   }
   .makeUp{
     background-image: url('../img/makeUp.jpg');
