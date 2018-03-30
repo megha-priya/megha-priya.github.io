@@ -150,7 +150,7 @@ body,
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
-    height:800px;
+    /* height:800px; */
   }
   .packageCard{
     background-color:transparent;
