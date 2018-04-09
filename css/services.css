@@ -81,26 +81,38 @@
     background-size:cover;
   }
   .div-2 {
-    background: url('https://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-basecamp.jpg')no-repeat;
+    background: url('../img/hair-color-md.jpg')no-repeat;
     background-position: center center;
     background-size:cover;
   }
   .div-3 {
-    background: url('https://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-backpacking.jpg')no-repeat;
+    background: url('../img/waxing-sm.jpg')no-repeat;
     background-position: center center;
     background-size:cover;
   }
   .div-4 {
-    background: url('https://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-canoe.jpg')no-repeat;
+    background: url('../img/eyebrows.jpg')no-repeat;
     background-position: center center;
     background-size:cover;
   }
   .div-5 {
-    background: url('https://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-photo.jpg')no-repeat;
+    background: url('../img/manicure.jpg')no-repeat;
     background-position: center center;
     background-size:cover;
   }
   .div-6 {
+    background: url('https://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-custom.jpg')no-repeat;
+    background-position: center center;
+    background-size:cover;
+  }
+
+  .div-7 {
+    background: url('../img/beard-md.jpg')no-repeat;
+    background-position:top center;
+    background-size:cover;
+  }
+
+  .div-8 {
     background: url('https://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-custom.jpg')no-repeat;
     background-position: center center;
     background-size:cover;
@@ -346,7 +358,7 @@ svg {
   }
   .slide:nth-child(2) .slide__bg {
     left: -50%;
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-2.jpg');
+    background-image: url('../img/hair-salons.jpg');
 /*     background-image: url(../img/residential-slide.jpeg); */
     background-position: center;
   }
@@ -363,9 +375,11 @@ svg {
   }
   .slide:nth-child(3) .slide__bg {
     left: -100%;
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-1.jpg');
+    background-image: url('../img/banner_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 /*     background-image: url(../img/slide-office.jpeg); */
-    background-position: center;
+    background-position: bottom;
   }
   .slide:nth-child(3) .slide__overlay-path {
     fill: #adc5cd;
@@ -380,7 +394,7 @@ svg {
   }
   .slide:nth-child(4) .slide__bg {
     left: -150%;
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-4.jpg');
+    background-image: url('../img/banner_3.jpg');
 /*     background-image: url(../img/budget-slide.jpeg); */
     background-position: center;
   }
