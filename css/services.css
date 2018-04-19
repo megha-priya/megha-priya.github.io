@@ -76,7 +76,7 @@
   }
 
   .div-1 {
-    background: url('https://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-raft.jpg')no-repeat;
+    background: url('../img/hair-spa.jpg')no-repeat;
     background-position: center center;
     background-size:cover;
   }
@@ -101,7 +101,7 @@
     background-size:cover;
   }
   .div-6 {
-    background: url('https://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-custom.jpg')no-repeat;
+    background: url('../img/facial-md.jpg')no-repeat;
     background-position: center center;
     background-size:cover;
   }
@@ -113,7 +113,7 @@
   }
 
   .div-8 {
-    background: url('https://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-custom.jpg')no-repeat;
+    background: url('../img/detan-md.jpg')no-repeat;
     background-position: center center;
     background-size:cover;
   }
@@ -341,9 +341,9 @@ svg {
   }
   .slide:nth-child(1) .slide__bg {
     left: 0;
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-3.jpg');
+    background-image: url('../img/waxing-banner.jpg');
 /*     background-image: url(../img/office-slide.jpeg); */
-    background-position: center;
+    background-position: bottom center;
   }
   .slide:nth-child(1) .slide__overlay-path {
     fill: #e99c7e;
@@ -471,10 +471,15 @@ svg {
     /* font-size: 1.8rem; */
     margin-bottom: 1.5rem;
   }
-  @media (max-width: 991px) {
+  @media (max-width: 580px) {
     .slide__text-desc {
-      /* display: none; */
+      display: none;
     }
+    .slider-pagi {
+      bottom: 5rem;
+    }
+
+
   }
   .slide__text-link {
     z-index: 5;
