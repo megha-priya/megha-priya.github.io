@@ -1,0 +1,42 @@
+.custom-icon {
+    cursor: pointer;
+    display: flex;
+    width: 50vw;
+    height: 50vw;
+    color: #fff;
+    font-size: 4rem;
+    border-radius: 25vw;
+    overflow: hidden;
+    background-size: cover;
+    border: 6px solid #fff;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
+    opacity: 0.8;
+    transition: background 0.5s, color 1s, opacity 0.5s, border 0.5s;
+  }
+  .custom-icon::before {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: url(https://spaceholder.cc/600x600);
+  }
+  .custom-icon:hover {
+    opacity: 1;
+    color: deepskyblue;
+    border-color: deepskyblue;
+  }
+  .icon-wrapper {
+    display: flex;
+   flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (min-width: 600px) {
+    .custom-icon {
+      width: 15vw;
+      height: 15vw;
+      font-size: 6rem;
+    }
+  }
+  
