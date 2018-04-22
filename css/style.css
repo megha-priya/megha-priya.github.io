@@ -10,7 +10,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /*loading screen css */
 #loading{
-	background-color: #dc3522;
+  /* background-color: #dc3522; */
+  background-color: #1c2331;
 	height: 100%;
 	width: 100%;
 	position: fixed;
@@ -271,12 +272,32 @@ h1, h2, h3, h4, h5, h6 {
     overflow-x: hidden;
   }
 
+  @media (max-width:580px) {
+    .carousel h1 {
+      font-size: 2.5rem;
+    }
+    .intro-bg {
+      height: 55px !important;
+    }
+    .value-text {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+    .custom-pb-sm-3 {
+      padding-bottom: 2rem;
+    }
+    .custom-px-sm-5 {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+  }
+
   .intro-bg {
     transform: rotateX(180deg);
-    height: 250px;
-    /* z-index: -999; */
+    height: 256px;
     background: #fff url("data:image/svg+xml,%3Csvg width='1280' height='233' xmlns='http://www.w3.org/2000/svg'%3E %3Cg fill='none' fill-rule='evenodd'%3E %3Cpath d='M1280 0c-167.463 0-449.312 114.933-639.815 114.933C449.68 114.933 173.4 0 0 0v233h1280V0z' fill='%23343943'/%3E %3Cpath d='M1280 140.13C1112.537 140.13 830.503 42 640 42S173.4 140.13 0 140.13v93h1280v-93z' fill='%231C2331'/%3E %3C/g%3E %3C/svg%3E ") bottom/100% no-repeat;
   }
+
   
   .fashion{
     background-image: url('../img/fashion.jpg');
@@ -285,7 +306,8 @@ h1, h2, h3, h4, h5, h6 {
     background-position:center;
   }
   .beard{
-    background-image: url('../img/beard.jpg');
+    /* background-image: url('../img/beard.jpg'); */
+    background-image: url('../img/men-haircut-lg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -297,10 +319,16 @@ h1, h2, h3, h4, h5, h6 {
     background-position:center;
   }
   .serviceImg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.2;
     background-image: url('../img/service.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center;
+    background-position:left bottom;
   }
   .fashionTextInfo{
     opacity:0.5;
@@ -331,21 +359,21 @@ h1, h2, h3, h4, h5, h6 {
     height:100px;
   }
   .boyhairShape{
-    background-image: url('../img/boy-hair-shape.svg');
+    background-image: url('../img/wax.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
     height:100px;
   }
   .malehairOfHeadAndFaceShapes{
-    background-image: url('../img/young-male-short-irregular-hair-on-head-and-a-small-beard.svg');
+    background-image: url('../img/boy-hair-shape.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
     height:100px;
   }
   .womanHeadSilhouette{
-    background-image: url('../img/female-hairs.svg');
+    background-image: url('../img/cream.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -361,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
   .pricingMenChild {
     width: 100%;
     height: 100%;
-    background-image: url('../img/serviceImg.jpg');
+    background-image: url('../img/men-service.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -543,4 +571,68 @@ h1, h2, h3, h4, h5, h6 {
   .custom-font {
     font-family:'Great Vibes', cursive;
   }
+
+  
+/* footer section */
+.custom-social-floating-btn {
+  background: purple;
+  border-radius: 50%;
+  color: white;
+  height:50px;
+  width: 50px;
+  text-align: center;
+  line-height: 48px;
+}
+
+.custom-fb-icon {
+  background: #3b5998 !important;
+}
+
+.custom-tw-icon {
+  background: #55acee !important;
+}
+.custom-gplus-icon {
+  background: #dc4e41 !important;
+}
+.custom-ins-icon {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  /* background: #3b5998 !important; */
+}
+.custom-center-text {
+    text-align: center;
+}
+.custom-left-text {
+    text-align: left;
+}
+.custom-right-text {
+  text-align: right;
+}
+.custom-right-justify {
+  justify-content: flex-end;
+}
+.social-icon-container {
+  /* flex-basis: 80%; */
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width:580px) {
+  .custom-right-justify {
+      justify-content: center;
+  }
+  .social-icon-container {
+      flex-basis: 80%;
+  }
+  .custom-left-text {
+      text-align: center;
+      margin-left: 0px !important;
+  }
+}
+/* footer section ends */
+
+.ombre-btn {
+  border: 2px solid #1c2331!important;
+    background-color: transparent!important;
+    color: #1c2331!important;
+}
+
   /* common css ends*/

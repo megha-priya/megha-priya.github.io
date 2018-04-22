@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Salon $ Spa</title>
+    <title>Create your style with us | Ombre Salon</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -44,7 +44,7 @@
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+      <a class="navbar-brand" href="index.html">
        <img src="img/ombre-logo.png" height="50">
       </a>
 
@@ -74,13 +74,13 @@
             <a class="nav-link" href="about.html">About us</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank">Contact us</a>
+              <a class="nav-link" href="contact.html">Contact us</a>
             </li>
         </ul>
 
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
               <i class="fa fa-facebook"></i>
             </a>
@@ -89,11 +89,10 @@
             <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
               <i class="fa fa-twitter"></i>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item">
-            <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded"
-              target="_blank">
-              <i class="fa fa-github mr-2"></i>Book Appointment
+            <a data-toggle="modal" data-target="#modalBookingForm1" class="nav-link border border-light rounded">
+              <i class="fa fa-calendar mr-2"></i>Book Appointment
             </a>
           </li>
         </ul>
@@ -123,14 +122,17 @@
         <div class="view fashion">
 
           <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-light d-flex align-items-center">
+          <div class="mask rgba-black-light d-flex align-items-end">
 
             <!-- Content -->
             <div class="container">
               <div class="row">
                   <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-3 ">
+                    <h1 class="white-text">
+                        Make up or break up 
+                    </h1>
                     <h1 class=" display-4 mb-4  white-text">
-                       Make up or break up <br>Look beautiful
+                       Look beautiful
                     </h1>
                   </div>  
               </div>
@@ -149,14 +151,17 @@
         <div class="view beard">
 
           <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-light d-flex align-items-center">
+          <div class="mask rgba-black-light d-flex align-items-end">
 
             <!-- Content -->
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-3 text-right">
-                      <h1 class="  display-4 mb-4  white-text">
-                          Enjoy professional <br>beauty services
+                      <h1 class=" white-text">
+                          It's not just a haircut
+                      </h1>
+                      <h1 class=" display-4 mb-4  white-text">
+                          It's an experience
                       </h1>
                     </div>  
                 </div>
@@ -175,14 +180,17 @@
         <div class="view hairSalon">
 
           <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-end">
 
             <!-- Content -->
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-3 ">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 py-3 text-right">
+                      <h1 class="white-text">
+                          Stay healthy
+                      </h1>
                       <h1 class="  display-4 mb-4  white-text">
-                          Stay healthy <br>look gorgeous
+                          Look gorgeous
                       </h1>
                     </div>  
                 </div>
@@ -212,7 +220,7 @@
 
       <section class="" id="pricing">
       <div class="row">
-        <div class="col-4 col-sm-12 col-md-4 col-lg-4 col-xl-4 px-0">
+        <div class=" col-sm-12 col-md-4 col-lg-4 col-xl-4 px-0">
           <div class="view pricingMen hm-black-strong ">
             <div class="pricingMenChild">
             </div>
@@ -226,7 +234,7 @@
             </div>
           </div>    
         </div>
-        <div class="col-4 col-sm-12 col-md-4 col-lg-4 col-xl-4 px-0 wow fadeIn view welcomeBackground">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 px-0 wow fadeIn view welcomeBackground">
           <div class="welcomeText">
             <h2 class="row justify-content-center text-center p-3 ">Welcome to Ombre Family</h2>
             <p class="text-center"><strong>Relax | Recharge | Renew</strong></p>
@@ -240,7 +248,7 @@
               </div>                 
             </div>
         </div>
-        <div class="col-4 col-sm-12 col-md-4 col-lg-4 col-xl-4 px-0">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 px-0">
             <div class="view beautifulBodyCasual hm-black-strong">
               <div class="beautifulBodyCasualChild"></div>
               <div class="innerChild p-4">
@@ -261,9 +269,9 @@
 <section>
 
     <!--Section heading-->
-    <h1 class="py-5 custom-font text-center">Why choose us?</h1>
+    <h1 class="pt-5 custom-font text-center">Why choose us?</h1>
     <!--Section description-->
-    <p class="px-5 mb-5 pb-3 lead text-center">We are committed to quality haircuts and exceptional customer service at affordable prices in a relaxing friendly atmosphere. Our dedicated staff delivers the experience tailored to the needs, requirements and budget of our clients.
+    <p class="px-5 mb-5 pb-3 text-center value-text">We are committed to quality haircuts and exceptional customer service at affordable prices in a relaxing friendly atmosphere. Our dedicated staff delivers the experience tailored to the needs, requirements and budget of our clients.
         So, come and try! Make sure you are in the right place. Don't miss your chance to look your best!
         </p>
 
@@ -271,13 +279,13 @@
     <div class="row pt-2">
 
     <!--Grid column-->
-    <div class="col-lg-5 text-center text-lg-left">
+    <div class="col-lg-5 text-center text-lg-left custom-pb-sm-3">
         <img src="http://www.beyondthebrows.com/wp-content/uploads/2016/01/Beauty-PNG-03650.png" alt="" class="img-fluid z-depth-0">
     </div>
     <!--Grid column-->
 
     <!--Grid column-->
-    <div class="col-lg-7">
+    <div class="col-lg-7 custom-px-sm-5">
 
         <!--Grid row-->
         <div class="row pb-3">
@@ -285,22 +293,8 @@
             <i class="fa fa-mail-forward fa-lg indigo-text"></i>
         </div>
         <div class="col-10">
-            <h5 class="font-weight-bold text-left mb-3 dark-grey-text">Safety</h5>
-            <p class="grey-text text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
-            deleniti hic.</p>
-        </div>
-        </div>
-        <!--Grid row-->
-
-        <!--Grid row-->
-        <div class="row pb-3">
-        <div class="col-2 col-md-1">
-            <i class="fa fa-mail-forward fa-lg indigo-text"></i>
-        </div>
-        <div class="col-10">
-            <h5 class="font-weight-bold text-left mb-3 dark-grey-text">Technology</h5>
-            <p class="grey-text text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
-            deleniti hic.</p>
+            <h5 class="font-weight-bold text-left mb-3 dark-grey-text">Quality Service</h5>
+            <p class="grey-text text-justify">Walk into Ombre salon and expose your hair, skin and body to a day of detoxification and relaxation. From head to toe our exclusive salon services have it all.</p>
         </div>
         </div>
         <!--Grid row-->
@@ -311,9 +305,21 @@
             <i class="fa fa-mail-forward fa-lg indigo-text"></i>
         </div>
         <div class="col-10">
-            <h5 class="font-weight-bold text-left mb-3 dark-grey-text">Finance</h5>
-            <p class="grey-text text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
-            deleniti hic.</p>
+            <h5 class="font-weight-bold text-left mb-3 dark-grey-text">Professional Staffs</h5>
+            <p class="grey-text text-justify">Our beauty experts are equiped with modern equipments, 
+              world class products and unmatched skill, setting our beauty services apart from the rest.</p>
+        </div>
+        </div>
+        <!--Grid row-->
+
+        <!--Grid row-->
+        <div class="row pb-3">
+        <div class="col-2 col-md-1">
+            <i class="fa fa-mail-forward fa-lg indigo-text"></i>
+        </div>
+        <div class="col-10">
+            <h5 class="font-weight-bold text-left mb-3 dark-grey-text">Value for Money</h5>
+            <p class="grey-text text-justify">If you feel you are not satisfied with our services, treat them as free because we believe that your hard-earned money deserves 100% satisfaction.</p>
         </div>
         </div>
         <!--Grid row-->
@@ -334,8 +340,8 @@
         <div class="row serviceLength">
 
           <!--Grid column-->
-          <div class="col-md-6 mb-4 pr-0">
-            <div class="view serviceImg hm-black-slight">
+          <div class="col-md-6 pr-0">
+            <div class="view serviceImg hm-black-slight"></div>
               <div class="mask"> </div>
               <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-5 mt-3">
@@ -343,26 +349,26 @@
                 </div>
               </div>
 
-              <div class="row justify-content-end">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7 px-4 mt-4 "><i class="fa fa-quote-left"></i>
-                  &nbsp;If you are ready to change the way you look and go from drab to fab, then our doors are open for you.
+              <div class="row justify-content-center ">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7 px-4 mt-4 mb-5">
+                  If you are ready to change the way you look and go from drab to fab, then our doors are open for you.
                   We believe that when you look good you feel good!
                   With Ombre salon, you can experiment with dozens of hairstyles, hair colors, makeup, and more. From blonde to brunette or curly
                 to straight, we got all you need. </div>
               </div>
 
-              <div class="row justify-content-end">
-                  <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 px-4 mt-3 text-center">
-                   <a href="services.html"><button type="button" class="btn btn-outline-success waves-effect btn-rounded">Explore All Services</button></a>
+              <div class="row justify-content-center">
+                  <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 px-4 mt-5 text-center">
+                   <a href="services.html"><button type="button" class="btn ombre-btn waves-effect btn-rounded">Explore All Services</button></a>
                   </div>  
               </div>
              
-            </div>
+            
           </div>
           <!--Grid column-->
 
           <!--Grid column-->
-          <div class="col-md-6 mb-4 pl-0">
+          <div class="col-md-6  pl-0">
 
              <div class="view  makeUp hm-black-strong">
              <div class="mask">
@@ -549,16 +555,16 @@
               </h6>
               <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
               <p>
-                  <a href="#!">Services</a>
+                  <a href="services.html">Services</a>
               </p>
               <p>
-                  <a href="#!">Packages</a>
+                  <a href="packages.html">Packages</a>
               </p>
               <p>
-                  <a href="#!">About us</a>
+                  <a href="about.html">About us</a>
               </p>
               <p>
-                  <a href="#!">Contact us</a>
+                  <a href="contact.html">Contact us</a>
               </p>
           </div>
           <!--/.Third column-->
@@ -586,8 +592,8 @@
 
   <!-- Copyright-->
   <div class="footer-copyright py-3 text-center">
-      © 2018 Copyright:
-      <a href="https://mdbootstrap.com/material-design-for-bootstrap/">
+      Copyright:
+      <a href="#">
           <strong>Ombre Salon</strong>
       </a>
   </div>
@@ -595,6 +601,69 @@
 
 </footer>
 <!--/.Footer-->
+
+<!-- modal -->
+
+<div class="modal fade" id="modalBookingForm1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!--Modal: Contact form-->
+    <div class="modal-dialog cascading-modal" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+            <!--Header-->
+            <div class="modal-header unique-color-dark white-text">
+                <h4 class="title">
+                    <i class="fa fa-calendar"></i> Book now</h4>
+                <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+
+                <!-- Material input name -->
+                <div class="md-form form-sm">
+                    <i class="fa fa-user prefix"></i>
+                    <input type="text" id="materialFormNameModalEx1" class="form-control form-control-sm">
+                    <label for="materialFormNameModalEx1">Your name</label>
+                </div>
+
+                <!-- Material input email -->
+                <div class="md-form form-sm">
+                    <i class="fa fa-envelope prefix"></i>
+                    <input type="email" id="materialFormEmailModalEx1" class="form-control form-control-sm">
+                    <label for="materialFormEmailModalEx1">Your email</label>
+                </div>
+
+                <!-- Material input subject -->
+                <div class="md-form form-sm">
+                    <i class="fa fa-phone prefix"></i>
+                    <input type="tel" id="materialFormSubjectModalEx1" class="form-control form-control-sm">
+                    <label for="materialFormSubjectModalEx1">Your phone</label>
+                </div>
+
+                <!-- Material textarea message -->
+                <div class="md-form form-sm">
+                    <i class="fa fa-pencil prefix"></i>
+                    <textarea type="text" id="materialFormMessageModalEx1" class="md-textarea form-control"></textarea>
+                    <label for="materialFormMessageModalEx1">Your message</label>
+                </div>
+
+                <div class="text-center mt-4 mb-2">
+                    <button class="btn btn-primary">Send
+                        <i class="fa fa-send ml-2"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+    <!--/Modal: Contact form-->
+</div>
+                      
+<!--/modal -->
                     
     <!-- SCRIPTS -->
     <!-- JQuery -->
